@@ -4,6 +4,8 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+const baseurl="https://crud-server-gyze.onrender.com";
+
 const Edit = () => {
   const { id } = useParams();
   const navigate = useNavigate();
@@ -25,7 +27,7 @@ const Edit = () => {
 
       try {
         const response = await axios.get(
-          `http://localhost:8000/api/getone/${id}`,
+          `${baseurl}/api/getone/${id}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,
