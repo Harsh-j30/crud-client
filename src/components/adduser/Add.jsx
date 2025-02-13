@@ -4,6 +4,8 @@ import axios from "axios";
 import toast from "react-hot-toast";
 import "bootstrap/dist/css/bootstrap.min.css";
 
+const baseurl="https://crud-server-gyze.onrender.com";
+
 const Add = () => {
   const users = {
     fname: "",
@@ -38,7 +40,7 @@ const Add = () => {
     try {
       // Send POST request with Authorization header
       const response = await axios.post(
-        "http://localhost:8000/api/create",
+        `${baseurl}/api/create`,
         user,
         {
           headers: {
