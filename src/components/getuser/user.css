@@ -1,0 +1,86 @@
+/* General styling for the page */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  /* Main container styling */
+  .userTable {
+    width: 80%; /* Increased the table container size */
+    margin: 50px auto; /* Centered the container */
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+  }
+  
+  /* Add User Button Styling */
+  .addButton {
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #800080;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .addButton:hover {
+    background-color: #5a005a;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  
+  table thead tr {
+    background-color: navy;
+    color: white;
+    font-size: 1.1rem;
+  }
+  
+  table th, table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  /* Action Buttons Styling */
+  .actionButtons button,
+  .actionButtons a {
+    margin: 0 5px;
+    color: white;
+    background-color: crimson;
+    border: none;
+    padding: 5px 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .actionButtons a {
+    background-color: #28a745;
+  }
+  
+  .actionButtons button:hover {
+    background-color: darkred;
+  }
+  
+  .actionButtons a:hover {
+    background-color: #1e7e34;
+  }
+  

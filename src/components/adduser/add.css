@@ -1,0 +1,62 @@
+.addUser {
+    margin: 0 auto;
+    padding: 15px;
+    max-width: 400px; /* Adjusting the max-width for a more compact layout */
+  }
+  
+  .addUserForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 5px; /* Adding gap between the label and input */
+  }
+  
+  .inputGroup label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .inputGroup input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .inputGroup button {
+    padding: 10px;
+    background-color: #007bff; /* Adjusting button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* Aligning text center */
+  }
+  
+  .inputGroup button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .addUser {
+      padding: 10px;
+      width: 100%;
+    }
+  
+    .addUserForm {
+      gap: 10px;
+    }
+  
+    .inputGroup {
+      flex-direction: column;
+    }
+  
+    .inputGroup label {
+      text-align: left;
+    }
+  }
+  
