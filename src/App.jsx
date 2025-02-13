@@ -1,5 +1,5 @@
 
-import { RouterProvider, createBrowserRouter, Outlet, Navigate } from "react-router-dom";
+import { RouterProvider, createHashRouter, Outlet, Navigate } from "react-router-dom";
 import User from "./components/getuser/User";
 import Add from "./components/adduser/Add";
 import Edit from "./components/updateuser/Edit";
@@ -49,7 +49,7 @@ const AuthenticatedLayout = () => {
 };
 
 // Router Configuration
-const route = createBrowserRouter([
+const route = createHashRouter([
   {
     path: "/",
     element: (
